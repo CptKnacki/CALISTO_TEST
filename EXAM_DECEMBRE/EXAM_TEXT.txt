@@ -1,0 +1,66 @@
+
+3C :
+
+Un character avec déplacement ZQSD avec rotation sur l'horizontal
+Anim de déplacement avant arrière mais pas en rotation
+Pas de jump
+Clic gauche pour prendre et connecter les éléments
+Clic droit pour relacher les objets
+Touche R pour déconnecter les liens d'un réflécteur en main
+
+GPE :
+
+SOURCE : Une sphère inamovible qui permet de connecter des réflécteurs
+et possède une couleur modifiable
+
+REFLECTEURS : Object interagible qui se parente en interaction,
+peux se connecter à une source ou à un réflécteur alimenté ou à un locker
+si le réflécteur en question est alimenté
+- Les réflécteurs pris en main relaché sont snappé au sol
+
+LOCKER : Disque pouvant étre alimenté par un réflecteurs alimenté,
+permet d'ouvrir une porte si alimenté
+
+PORTE : Empêche le joueur de passer et ne s'ouvre que si son locker
+ désigné est alimenté
+
+ALIMENTATION : Tout le système d'alimentation se base sur du Linetrace,
+car en plus de connecter les éléments avec l'interaction,
+il faut que leur liens n'est aucun obstacle sur le chemin
+
+INTERACTION : Linetrace depuis le centre de l'écran
+
+UI : 
+
+- à chaques fois qu'une interaction et possible, afficher un icone 
+flottant de confirmation ( prendre réflécteur ou connexion )
+
+- lorsque le joueur prends un réflécteur, un icône flottant apparaît
+sur au niveau des sources et locker
+
+- Lorsque un réflécteur est connecté, un lien apparaît entre lui et
+sa source d'alimentation, si la connexion est valide, le lien apparaît
+de la couleur de la source, sinon il apparaît blanc
+
+
+
+CHECK LIST : 
+
+- PERSO // FAIT
+- DEPLACEMENT // FAIT
+- ANIMATION // FAIT
+- DEPROJECTION // FAIT
+- INTERACTION PICK UP // FAIT
+- INTERACTION DROP // FAIT
+- CONNEXION REFLECTEURS SOURCE // FAIT
+- RESET DE CONNEXION // FAIT
+- CONNEXION REFLECTEURS REFLECTEURS // FAIT
+- CONNEXION REFLECTEURS LOCKER // FAIT
+- INTERACTION LOCKER PORTE // FAIT
+- NIAGARA BEAM // FAIT
+- COULEUR DU RAYON = COULEUR SOURCE // FAIT
+- COULEUR DU LOCKER = COULEUR RECEPTOR + ALIM // FAIT
+- UI FLOTTANT INTERACTION // FAIT
+- UI FLOTTANT CONFIRMATION // FAIT
+- RESET NIAGARA // FAIT
+- CORRECTION RETICULE // FAIT
